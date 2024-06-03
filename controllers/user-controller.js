@@ -1,7 +1,8 @@
-const { User, Thought } = require("../models");
+const { User} = require("../models");
 const { ObjectId } = require('mongoose').Types;
 
-const userController = {
+
+module.exports = {
   // get all users
   async getUsers(req, res) {
     try{
@@ -127,6 +128,4 @@ const userController = {
       res.status(500).json(err);
     }
   },
-};
-
-module.exports = userController;
+}
