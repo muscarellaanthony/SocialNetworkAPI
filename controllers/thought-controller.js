@@ -88,7 +88,7 @@ module.exports = {
       if (!thought) {
         return res.status(404).json({ message: 'No thought matches that id' });
       }
-      res.status(200).json({message: 'Reaction Added'});
+      res.status(200).json({message: 'Reaction Added.'});
     } catch (err) {
       console.log(err);
       res.status(500).json(err);
@@ -114,5 +114,3 @@ module.exports = {
     }
   },
 };
-
-module.exports = thoughtController;
