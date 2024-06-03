@@ -1,4 +1,5 @@
 const { User, Thought } = require("../models");
+const { ObjectId } = require('mongoose').Types;
 
 const userController = {
   // get all users
